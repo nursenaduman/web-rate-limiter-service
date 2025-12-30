@@ -23,6 +23,27 @@ Bu proje, web uygulamalarında aşırı istek (ör. brute force) durumlarını �
 - FastAPI TestClient
 
 ---
+## Proje Yapısı
+
+rate-limiter-service/
+├── app/
+│   ├── main.py
+│   ├── rate_limiter.py
+│   ├── config.py
+│   └── __init__.py
+│
+├── tests/
+│   ├── test_rate_limiter.py
+│   ├── test_e2e_rate_limiter.py
+│   └── __init__.py
+│
+├── demo/
+│   └── brute_force_scenario.py
+│
+├── requirements.txt
+└── README.md
+
+---
 
 ## Uygulamayı Çalıştırma
 
@@ -51,5 +72,6 @@ Rate limiting mekanizması, pytest kullanılarak yazılmış en az 5 adet birim 
 -demo/brute_force_scenario.py dosyası ile brute force saldırısını temsil eden bir istemci senaryosu çalıştırılabilir. 2 farklı terminal gereklidir.
 1) uvicorn app.main:app --reload
 2) python demo/brute_force_scenario.py
+
 
 
