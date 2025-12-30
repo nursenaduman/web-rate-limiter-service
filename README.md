@@ -24,7 +24,7 @@ Bu proje, web uygulamalarında aşırı istek (ör. brute force) durumlarını �
 
 ---
 ## Proje Yapısı
-
+```
 rate-limiter-service/
 ├── app/
 │   ├── main.py
@@ -42,7 +42,7 @@ rate-limiter-service/
 │
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## Uygulamayı Çalıştırma
@@ -72,6 +72,7 @@ Rate limiting mekanizması, pytest kullanılarak yazılmış en az 5 adet birim 
 -demo/brute_force_scenario.py dosyası ile brute force saldırısını temsil eden bir istemci senaryosu çalıştırılabilir. 2 farklı terminal gereklidir.
 1) uvicorn app.main:app --reload
 2) python demo/brute_force_scenario.py
+
 
 
 
